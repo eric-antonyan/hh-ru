@@ -55,7 +55,7 @@ const Form: FC<{ type?: string, setIsOpen?: any, uuid?: string }> = ({ type = "g
     };
 
     return (
-        <form onSubmit={type !== "todo" ? onSubmitTodoGroup : onSubmitTodo} className={`w-[500px] ${type === "group" ? "rounded-t-3xl" : null} py-5 shadow flex pr-5`}>
+        <form onSubmit={type !== "todo" ? onSubmitTodoGroup : onSubmitTodo} className={`w-full ${type === "group" ? "rounded-t-3xl" : null} py-5 shadow flex pr-5`}>
             <input
                 onChange={handleChange}
                 type="text"
